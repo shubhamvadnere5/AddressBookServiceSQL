@@ -37,3 +37,9 @@ select * from AddressBook;
 --UC6 Retrive Data Belongs to city and state--
 select FirstName from AddressBook where city='Thane' or StateName='Maharashtra';
 select * from AddressBook;
+
+--UC7 Size or Count of addressbook using state and city--
+Select Count(City) as Size,City,StateName from AddressBook group by StateName,City;
+
+--UC8 Sorted name a;phabetically using city name--
+select FirstName from AddressBook where City='Thane' order by FirstName;
