@@ -22,4 +22,9 @@ insert into AddressBook values('Bhushan', 'Kapale','Ulhasnagar','Thane','Maharas
 ('Siddhant','Wani','badlapur','Thane','Maharashtra',421006,8888146666,'SiddhantWani@gmail.com'),
 ('Shubham', 'Vadnere','Mulund','Thane','Maharashtra',421007,8888156666,'ShubhamVadnere@gmail.com'),
 ('Pavan', 'Patil','Ambernath','Thane','Maharashtra',421008,8888166666,'PavanPatil@gmail.com')
-select * from AddressBook;s
+select * from AddressBook;
+
+--UC4 Edit Existing Contact using name--
+update AddressBook set PhoneNum=9834471126 where FirstName='Shubham';
+update AddressBook set EmailId='NirajKapale5@gmail.com' where FirstName='Niraj';
+update AddressBook set city='Jalgaon' where FirstName='Siddhant';
