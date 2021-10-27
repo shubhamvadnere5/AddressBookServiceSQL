@@ -28,3 +28,7 @@ select * from AddressBook;
 update AddressBook set PhoneNum=9834471126 where FirstName='Shubham';
 update AddressBook set EmailId='NirajKapale5@gmail.com' where FirstName='Niraj';
 update AddressBook set city='Jalgaon' where FirstName='Siddhant';
+select * from AddressBook;
+
+--UC5 Delete Person using their name--
+delete from AddressBook where FirstName='Pavan';
