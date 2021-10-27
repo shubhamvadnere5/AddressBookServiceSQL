@@ -43,3 +43,13 @@ Select Count(City) as Size,City,StateName from AddressBook group by StateName,Ci
 
 --UC8 Sorted name a;phabetically using city name--
 select FirstName from AddressBook where City='Thane' order by FirstName;
+
+--UC9 Add the new columns and adding the address book name and type--
+alter table AddressBook add 
+AddressBookName varchar(50),
+Type varchar(50);
+select * from AddressBook;
+--Update the table--
+update AddressBook set AddressBookName='BestFriend',Type='Friend' where FirstName='Niraj';
+update AddressBook set AddressBookName='Brother',Type='Family' where FirstName='Bhushan';
+update AddressBook set AddressBookName='Friend',Type='Friend' where FirstName='Siddhant';
