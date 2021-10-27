@@ -53,3 +53,6 @@ select * from AddressBook;
 update AddressBook set AddressBookName='BestFriend',Type='Friend' where FirstName='Niraj';
 update AddressBook set AddressBookName='Brother',Type='Family' where FirstName='Bhushan';
 update AddressBook set AddressBookName='Friend',Type='Friend' where FirstName='Siddhant';
+
+--UC10 Count person by type--
+Select count(Type)as Count,Type  from AddressBook group by Type;
